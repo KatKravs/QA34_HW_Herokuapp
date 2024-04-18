@@ -16,11 +16,36 @@ public class HomePage extends BasePage {
         click(javaScriptAlerts);
         return new LinkList(driver);
     }
+
     @FindBy(css = "[href='/windows']")
     WebElement windowsLink;
 
     public LinkList getWindowsPage() {
         click(windowsLink);
+        return new LinkList(driver);
+    }
+
+    @FindBy(css = "[href='/checkboxes']")
+
+    WebElement checkboxLink;
+
+    public LinkList getCheckboxesPage() {
+        click(checkboxLink);
+        return new LinkList(driver);
+    }
+    @FindBy(css = "[href='/dropdown']")
+
+    WebElement dropdownLink;
+    public LinkList getDropdownPage() {
+        click(dropdownLink);
+
+        return new LinkList(driver);
+    }
+    @FindBy(css = "[href='/upload']")
+
+    WebElement uploadLink;
+    public LinkList getFileUploadPage() {
+        click(uploadLink);
         return new LinkList(driver);
     }
 }
